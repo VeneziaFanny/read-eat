@@ -1,0 +1,21 @@
+.main-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #F4E2DE;
+}
+
+.navbar-title {
+    margin-left: 10%;
+}
+
+.navbar-menu {
+    margin-right: 10%;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
