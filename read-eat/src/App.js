@@ -1,7 +1,9 @@
-import './App.css';
-import Navbar from './components/navbar.js';
-import Recipes from './pages/all-recipes.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import './App.css';
+import Navbar from './components/navbar/navbar.js';
+import Recipes from './pages/recipes/all-recipes.js';
+import Books from './pages/books/books.js';
 
 function App() {
   return (
@@ -11,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recettes" element={<Recipes />} />
+          <Route path="/books" element={<Books />} />
         </Routes>
       </div>   
     </Router>
