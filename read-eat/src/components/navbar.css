@@ -10,6 +10,11 @@
     margin-left: 10%;
 }
 
+.navbar-title a {
+    text-decoration: none;
+    color: black;
+}
+
 .navbar-menu {
     margin-right: 10%;
 }
@@ -18,4 +23,8 @@
     text-decoration: none;
     margin-right: 15px;
     color: black;
+}
+
+.nav-link:hover {
+color: white;
 }
