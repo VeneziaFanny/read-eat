@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './menu.css';
 
@@ -8,7 +9,9 @@ const Menu = ({categories}) => {
       <ul>
         {categories.map((category, index) => (
           <li key={index}>
-            <a href={`#${category.toLowerCase()}`}>{category}</a>
+            <Link to={`/${category.toLowerCase()}`} className="menu-link">
+              {category}
+            </Link>
           </li>
         ))}
       </ul>

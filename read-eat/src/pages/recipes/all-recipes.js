@@ -9,7 +9,7 @@ function Recipes() {
   return (
     <div className="recipes-page">
       <header className="recipes-header">
-        <h1>Recettes</h1>
+        <h4>Recettes</h4>
         <Menu categories={categories} />
       </header>
       <main className="recipes-container">

@@ -4,6 +4,9 @@ import './App.css';
 import Navbar from './components/navbar/navbar.js';
 import Recipes from './pages/recipes/all-recipes.js';
 import Books from './pages/books/books.js';
+import WhoAmI from './pages/whoami/whoami.js';
+import Contact from './pages/contact/contact.js';
+import Bd from './pages/bd/bd.js';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/recettes" element={<Recipes />} />
           <Route path="/books" element={<Books />} />
+          <Route path="/whoami" element={<WhoAmI />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/bd" element={<Bd />} />
         </Routes>
       </div>   
     </Router>
