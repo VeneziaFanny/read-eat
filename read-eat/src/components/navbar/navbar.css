@@ -2,29 +2,44 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #F4E2DE;
+    /* padding: 30px 2px; */
+    background-color: #B6D8F2;
 }
 
 .navbar-title {
-    margin-left: 10%;
+    margin-left: 6%;
 }
 
 .navbar-title a {
     text-decoration: none;
-    color: black;
+    color: #1655a2;
+}
+
+.navbar-title p {
+    color: #1655a2;
 }
 
 .navbar-menu {
-    margin-right: 10%;
+    margin-right: 3%;
 }
 
 .navbar-menu a {
     text-decoration: none;
     margin-right: 15px;
-    color: black;
+    color: #1655a2;
 }
 
 .nav-link:hover {
 color: white;
 }
+
+.navbar-logo img {
+    height: 130px;
+}
+
+.navbar-logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+  }

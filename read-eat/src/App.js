@@ -28,11 +28,12 @@ function App() {
 
 function Home() {
   return (
-    <header className="App-header">
-      <p>
-        Bienvenue sur Read Eat ! Le site qui te propose de la nourriture pour le corps et pour l'esprit !
-      </p>
-    </header>
+    <div className="home-page">
+      <main className="main-section">
+        <h1>Bienvenue sur Read Eat !</h1>
+        <h4>Le site qui te propose de la nourriture pour le corps et pour l'esprit !</h4>
+      </main>
+    </div>
   );
 }
 

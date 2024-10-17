@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-page {
   text-align: center;
+}
+
+.home-page {
+  text-align: center;
+}
+
+.main-section {
+  background-image: url('photos/homepagephoto.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 150px;
+  color: white;
+  text-align: center;
+  height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
