@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import './navbar.css';
 import logo from '../../photos/logo-without-background.png';
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  console.log("scrolled", scrolled);
+
   return (
-    <nav className="main-body">
+    <nav className={`main-body ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-title">
         <Link to="/">READ EAT</Link>
         <p>Books & Foods</p>

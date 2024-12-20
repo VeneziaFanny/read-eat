@@ -2,9 +2,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 30px 2px; */
+    padding: 20px 10px;
     background-color: #B6D8F2;
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .main-body.scrolled {
+    height: 60px; /* Hauteur réduite */
+    padding: 10px 5px; /* Réduction de la marge intérieure */
+  }
+  
+  .navbar-logo img {
+    height: 100px;
+  }
+  
+  .main-body.scrolled .navbar-logo img {
+    height: 70px; /* Réduction de la taille du logo */
+  }
 
 .navbar-title {
     margin-left: 6%;
